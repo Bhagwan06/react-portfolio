@@ -3,6 +3,8 @@ import { Title } from "./Title";
 
 export const Skill = () => {
   return (
+
+    <>
     <section className="skills" id="skills">
       <Title title="Skills" />
 
@@ -29,5 +31,6 @@ export const Skill = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };

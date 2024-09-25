@@ -4,6 +4,7 @@ import { Title } from "./Title";
 
 export const About = () => {
   return (
+    
     <section className="about" id="about">
       <Title title="About Me" />
 
