@@ -1,3 +1,4 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
 import { About } from "./components/About";
@@ -12,33 +13,40 @@ function App() {
   return (
     <>
       {/* <!-- dar mode toggler --> */}
-
+{/* 
       <input type="checkbox" id="darkMode" />
       <div className="wrapper">
         <label htmlFor="darkMode">
           <i className="fa-solid fa-circle-half-stroke"></i>
-        </label>
+        </label> */}
         {/* <!-- navbar --> */}
-        <Navbar />
+        <Routes>
+        <Route path="/" element={<Hero />}/>
+        <Route path="skills" element={<Skill />}/>
+        <Route path="projects" element={<Project />}/>
+        <Route path="about" element={<About />}/>
+        <Route path="contact" element={<Contact />}/>
+        </Routes>
+
 
         {/* <!-- hero section  --> */}
-        <Hero />
+        {/* <Hero /> */}
 
         {/* <!-- skills section  --> */}
-        <Skill />
+        {/* <Skill /> */}
 
         {/* <!-- project section  --> */}
-        <Project />
+        {/* <Project /> */}
 
         {/* <!-- about me section  --> */}
-        <About />
+        {/* <About /> */}
 
         {/* <!-- Contact section  --> */}
-        <Contact />
+        {/* <Contact /> */}
 
         {/* <!-- Footer section  --> */}
-        <Footer />
-      </div>
+        {/* <Footer /> */}
+      {/* </div> */}
     </>
   );
 }
